@@ -1,0 +1,205 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  color: white;
+  font-size: 18px;
+  background-image: url("Background.jpeg");
+
+}
+
+.bg {
+  background-image: url("Background.jpeg");
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100%;
+}
+
+
+.page-header {
+  font-family:  "Arial Black", Gadget, sans-serif;
+  letter-spacing: +2px;
+  padding: 25px;
+  margin: 00px;
+  border: 0px;
+  text-transform: uppercase;
+}
+
+#last-updated {
+    visibility: hidden;
+}
+
+/*Animation for the Header Borders*/
+#effect {
+  width: 25%;
+  height: 8px;
+  background-color: #E9967A;
+  position: relative;
+  animation-name: header-border;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+  animation-direction: alternate;
+  margin-bottom: 30px;
+}
+
+#effect1
+{
+  margin-top: 10px;
+  width: 25%;
+  height: 8px;
+  background-color: #E9967A;
+  position: relative;
+  animation-name: header-border;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+  animation-direction: alternate;
+}
+
+@keyframes header-border {
+  100%  {background-color:#CD5C5C;width:100%}
+}
+
+.jumbotron {
+  background-color: transparent;
+  color: white;
+  margin: 20px;
+  font-family: 'Archivo', sans-serif;
+}
+
+/* Design Drop-Down*/
+select {
+font-family: 'Archivo', sans-serif;
+letter-spacing: +2px;
+font-size: 30px;
+text-shadow: 0 0 3px #000;
+}
+
+.form-control {
+ display: block;
+  width: 100%;
+  height: 45px;
+  padding: 6px 12px;
+  font-size: 20px;
+  color: #fff;
+  background-color: #000;
+  background-image: none;
+  border: 5px solid #CD5C5C;
+  border-radius: 4px;
+  }
+
+select:hover {
+  background-color:#232b2b;
+}
+/* END Drop-Down*/
+
+
+p {
+  margin: 0px;
+}
+
+#errBox {
+  font-style: italic;
+  font-size: 25px;
+  padding: 0px;
+  color: yellow;
+}
+
+/* Headings */
+h1 {
+  margin: 0px;
+  font-size: 42px;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 33px;
+
+  font-family: 'Archivo', sans-serif;
+  text-shadow: 2px 2px #000;
+  letter-spacing: 2px;
+}
+
+h3 {
+  letter-spacing: +2px;
+  font-size: 25px;
+  text-shadow: 0 0 3px #000;
+}
+/* END Headings */
+
+/* Design for panels */
+.panel {
+  margin-bottom: 20px;
+  border: 5px solid #CD5C5C;
+  border-radius: 8px;
+}
+
+.panel-default>.panel-heading {
+  color: #fff;
+  background-color: #232b2b;
+
+  font-family: 'Archivo', sans-serif;
+  text-shadow: 2px 2px #000;
+  letter-spacing: 2px;
+}
+
+.panel-heading {
+  padding: 10px 15px;
+}
+
+.panel-body {
+    padding: 15px;
+    background-color: #232b2b;
+    font-size: 30px;
+
+    font-family: 'Archivo', sans-serif;
+    text-shadow: 2px 2px #000;
+    letter-spacing: 2px;
+}
+
+.panel-footer {
+    background-color: #232b2b;
+}
+
+#global-deaths-num {
+  color: red;
+}
+
+#global-recovered-num {
+  color: green;
+}
+/* END Design for panels */
+
+/* Design for tables */
+table {
+   border-collapse: collapse;
+   font-family: 'Archivo', sans-serif;
+   text-shadow: 2px 2px #000;
+   letter-spacing: 2px;
+}
+
+
+th, tr, td {
+  border: 2px solid #CD5C5C;
+  text-align: center;
+}
+
+
+#country-stats-table {
+  visibility:hidden
+}
+/* END Design for tables */
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: 126px;
+  margin-left: 10px;
+  margin: 0px;
+}
+
+.ppl-icon {
+  height: 50px;
+  width: 100px;
+}

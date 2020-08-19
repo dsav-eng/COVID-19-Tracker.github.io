@@ -1,0 +1,111 @@
+﻿<!doctype html>
+<html lang="eng">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="covidTrakerStyle.css">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="covidTrackerLogic.js"></script>
+</head>
+
+  <body>
+    <div class="bg">
+
+      <div class="container-fluid">
+        <div id="effect1"></div>
+        <div class="page-header">
+          <h1>COVID-19 Tracker </h1>
+          <p id="last-updated">Last Updated On: <span id="currDate"></span></p>
+        </div>
+        <div id="effect"></div>
+
+        <div class="jumberton">
+          <h2>Global Data</h2>
+          <p id="errBoxGlobal"></p>
+          <div class="row" id="global-row">
+
+            <div class="col-sm-3 col-xs-12">
+              <div class="panel panel-default text-center">
+                <div class="panel-heading">
+                  <h3>Confirmed</h3>
+                </div>
+                <div class="panel-body">
+                  <p id="global-confirmed-num">Fetching data...</p>
+                </div>
+                <div class="panel-footer">
+                  <img class="ppl-icon" src="Images\white.jpeg" alt="picture">
+                </div>
+              </div>
+            </div>  <!-- End Panel Confirmed -->
+
+            <div class="col-sm-3 col-xs-12">
+              <div class="panel panel-default text-center">
+                <div class="panel-heading">
+                  <h3>Deaths</h3>
+                </div>
+                <div class="panel-body">
+                  <p id="global-deaths-num">Fetching data..</p>
+                </div>
+                <div class="panel-footer">
+                  <img class="ppl-icon" src="Images\red.jpeg" alt="picture">
+                </div>
+              </div>
+            </div>  <!-- End Panel "Deaths" -->
+
+            <div class="col-sm-3 col-xs-12">
+              <div class="panel panel-default text-center">
+                <div class="panel-heading">
+                  <h3>Recovered</h3>
+                </div>
+                <div class="panel-body">
+                  <p id="global-recovered-num">Fetching data..</p>
+                </div>
+                <div class="panel-footer">
+                  <img class="ppl-icon" src="Images\green.jpeg" alt="picture">
+                </div>
+              </div>
+            </div>  <!-- End Panel Recovered -->
+
+          </div>  <!-- End global-row -->
+        </div>  <!-- End jumbotron "Global" -->
+
+        <div class="jumberton">
+          <div class="row" id="country-row">
+            <div class="col-sm-4 col-xs-12">
+              <h2>By Country</h2>
+              <select class="mdb-select md-form form-control" id="c-dropdown" name="c" onchange="loadData('https://api.covid19api.com/summary',getDataByCountry)">
+                <option selected>Select a Country</option>
+              </select>
+              <div style="overflow-x:auto;">
+                <table class="table" id="country-stats-table">
+                  <tr>
+                    <th>Confirmed</th>
+                    <th>Deaths</th>
+                    <th>Recovered</th>
+                  </tr>
+                </table>
+              </div>
+              <span id="errBox"></span>
+            </div> <!-- End column -->
+
+            <div class="col-sm-1 col-xs-12">
+              <p></p>
+            </div>
+
+            <div class="col-sm-4 col-xs-12">
+              <h2>Protect Yorself</h2>
+              <div class="embed-responsive embed-responsive-4by3">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/1APwq1df6Mw"></iframe>
+              </div>
+            </div>  <!-- End column -->
+
+          </div> <!-- End row-country select  -->
+        </div> <!-- End jumbotron "byCountry"  -->
+      </div><!-- End cont-fluid  -->
+    </div> <!-- End image background -->
+
+  </body>
+</html>
