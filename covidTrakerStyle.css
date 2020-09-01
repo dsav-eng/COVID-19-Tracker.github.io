@@ -203,3 +203,10 @@ th, tr, td {
   height: 50px;
   width: 100px;
 }
+
+footer {
+  color: yellow;
+  font-size: 12px;
+  margin: 20px;
+
+}
