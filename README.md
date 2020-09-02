@@ -8,4 +8,4 @@ Link to the app: https://dsav-eng.github.io/COVID-19-Tracker.github.io/
 Implemented to demo knowlege of core web technologies
 - View: **HTML** and some dynamic **JavaScript**
 - Style: **CSS** with some use of **Bootstrap** to make the view responsive
-- Logic: **JavaScript**,  **AJAX**, **JSON**
+- Logic: **JavaScript**,  **AJAX**, **JSON**, **HTTP API Calls**
